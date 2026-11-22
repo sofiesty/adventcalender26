@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Daily Puzzle</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22%3E%3Ctext y=%22.9em%22 font-size=%2290%22%3E%E2%9D%A4%EF%B8%8F%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;1,9..144,400&family=Caveat:wght@500;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="puzzle-page">
+  <canvas id="snow" aria-hidden="true"></canvas>
+
+  <nav class="topbar">
+    <a class="back" id="back" href="./">← Calendar</a>
+    <span class="topbar-day" id="day-label"></span>
+  </nav>
+
+  <main class="puzzle-wrap">
+    <div class="puzzle-status" id="status">Unwrapping today's puzzle…</div>
+
+    <article class="puzzle" id="puzzle" hidden>
+      <h1 class="puzzle-title" id="title"></h1>
+      <div class="puzzle-body" id="body"></div>
+
+      <section class="panel">
+        <h2>Your puzzle input</h2>
+        <p class="muted" id="input-info"></p>
+        <div class="buttons">
+          <button class="btn" id="view-input">Open in new tab</button>
+          <button class="btn" id="download-input">Download input.txt</button>
+          <button class="btn" id="copy-input">Copy</button>
+        </div>
+      </section>
+
+      <section class="panel" id="answer-panel">
+        <h2>Your answer</h2>
+        <form class="answer-form" id="answer-form" autocomplete="off">
+          <input class="answer-input" id="answer" name="answer" placeholder="Type your answer" spellcheck="false" required>
+          <button class="btn primary" id="submit" type="submit">Submit</button>
+        </form>
+        <p class="feedback" id="feedback" role="status"></p>
+      </section>
+
+      <section class="reward" id="reward" hidden>
+        <p class="reward-kicker">★ Solved ★</p>
+        <p class="reward-message" id="reward-message"></p>
+        <p class="muted">Your answer: <code id="solved-answer"></code></p>
+      </section>
+    </article>
+  </main>
+
+  <script type="module" src="/puzzle.js"></script>
+</body>
+</html>

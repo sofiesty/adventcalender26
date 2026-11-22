@@ -1,0 +1,12 @@
+node_modules
+dist
+.DS_Store
+
+# Plaintext door content and photos. NEVER commit or deploy these.
+secret/
+
+# Demo data for local testing only
+demo/
+
+# Temporary folder while sealing
+*.tmp/

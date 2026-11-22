@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Advent Calendar</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22%3E%3Ctext y=%22.9em%22 font-size=%2290%22%3E%E2%9D%A4%EF%B8%8F%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;1,9..144,400&family=Caveat:wght@500;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <canvas id="snow" aria-hidden="true"></canvas>
+
+  <header class="hero">
+    <p class="eyebrow">December 2026</p>
+    <h1>24 Dager med <em>hjernetrim</em></h1>
+    <p class="subtitle">Ein per dag fram t jul ♥</p>
+  </header>
+
+  <main>
+    <div class="calendar" id="calendar">
+      <!-- doors are generated in script.js -->
+    </div>
+  </main>
+
+  <footer class="footer">
+    <p>laget bare for deg, kyss&klem Sofie</p>
+  </footer>
+
+  <dialog class="modal" id="modal">
+    <div class="modal-card">
+      <button class="modal-close" aria-label="Close">×</button>
+      <p class="modal-day"></p>
+      <img class="modal-image" alt="" hidden>
+      <blockquote class="modal-quote"></blockquote>
+      <p class="modal-by"></p>
+      <a class="puzzle-link" href="#">
+        <span class="puzzle-kicker">Today's puzzle</span>
+        <span class="puzzle-name"></span>
+        <span class="puzzle-arrow" aria-hidden="true">→</span>
+      </a>
+    </div>
+  </dialog>
+
+  <script type="module" src="/script.js"></script>
+</body>
+</html>

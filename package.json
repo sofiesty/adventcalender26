@@ -1,0 +1,21 @@
+{
+  "name": "adventcalender26",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --open",
+    "build": "vite build",
+    "preview": "vite preview",
+    "seal": "node scripts/seal.mjs",
+    "preview-doors": "node scripts/seal.mjs --preview && vite --open \"/?demo\""
+  },
+  "devDependencies": {
+    "marked": "^18.2.1",
+    "sharp": "^0.35.5",
+    "vite": "^8.3.8"
+  },
+  "dependencies": {
+    "tlock-js": "^0.9.0"
+  }
+}
