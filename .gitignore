@@ -10,3 +10,6 @@ demo/
 
 # Temporary folder while sealing
 *.tmp/
+
+# iCloud Drive conflict copies (e.g. "1 2.json")
+* 2.*
